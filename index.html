@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="sr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Nova Barber</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <header>
+
+        <nav>
+            <h2>Nova Barber</h2>
+
+            <a href="#usluge">Usluge</a>
+            <a href="#cjenovnik">Cjenovnik</a>
+            <a href="#kontakt">Kontakt</a>
+        </nav>
+
+        <div class="hero">
+
+            <h1>Nova Barber</h1>
+
+            <p>
+                Profesionalno šišanje i uređivanje brade.
+            </p>
+
+            <button id="zakazi">
+                Zakaži termin
+            </button>
+
+        </div>
+
+    </header>
+
+
+    <section id="usluge">
+
+        <h2>Naše usluge</h2>
+
+        <div class="usluge">
+
+            <div class="usluga">
+                <h3>Muško šišanje</h3>
+
+                <p>
+                    Precizno šišanje prilagođeno vašem stilu.
+                </p>
+            </div>
+
+
+            <div class="usluga">
+                <h3>Uređivanje brade</h3>
+
+                <p>
+                    Oblikovanje i uređivanje brade.
+                </p>
+            </div>
+
+
+            <div class="usluga">
+                <h3>Šišanje + brada</h3>
+
+                <p>
+                    Kompletno uređivanje za potpuno sređen izgled.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="cjenovnik">
+
+        <h2>Cjenovnik</h2>
+
+        <div class="cjenovnik">
+
+            <div class="cijena">
+                <h3>Muško šišanje</h3>
+                <strong>10 €</strong>
+            </div>
+
+
+            <div class="cijena">
+                <h3>Uređivanje brade</h3>
+                <strong>7 €</strong>
+            </div>
+
+
+            <div class="cijena">
+                <h3>Šišanje + brada</h3>
+                <strong>15 €</strong>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <section id="radno-vrijeme">
+
+        <h2>Radno vrijeme</h2>
+
+        <p>
+            Ponedjeljak – Subota: 09:00 – 20:00
+        </p>
+
+        <p>
+            Nedjelja: Zatvoreno
+        </p>
+
+    </section>
+
+
+    <section id="kontakt">
+
+        <h2>Kontakt</h2>
+
+        <p>📍 Herceg Novi</p>
+
+        <p>📞 +382 67 123 456</p>
+
+        <p>📷 Instagram: @novabarber</p>
+
+    </section>
+
+
+    <!-- FORMA ZA ZAKAZIVANJE -->
+
+    <section id="forma" class="forma">
+
+        <div class="forma-sadrzaj">
+
+            <h2>Zakaži termin</h2>
+
+
+            <form
+                action="https://api.web3forms.com/submit"
+                method="POST"
+            >
+
+                <!-- WEB3FORMS ACCESS KEY -->
+
+                <input
+                    type="hidden"
+                    name="access_key"
+                    value="e031fc60-743c-4067-b9cb-44335cc89f1b"
+                >
+
+
+                <input
+                    type="text"
+                    id="ime"
+                    name="ime"
+                    placeholder="Vaše ime"
+                    required
+                >
+
+
+                <select
+                    id="usluga"
+                    name="usluga"
+                    required
+                >
+
+                    <option value="">
+                        Izaberite uslugu
+                    </option>
+
+                    <option value="Muško šišanje">
+                        Muško šišanje
+                    </option>
+
+                    <option value="Uređivanje brade">
+                        Uređivanje brade
+                    </option>
+
+                    <option value="Šišanje + brada">
+                        Šišanje + brada
+                    </option>
+
+                </select>
+
+
+                <input
+                    type="date"
+                    id="datum"
+                    name="datum"
+                    required
+                >
+
+
+                <input
+                    type="time"
+                    id="vrijeme"
+                    name="vrijeme"
+                    required
+                >
+
+
+                <button
+                    type="submit"
+                    id="potvrdi"
+                >
+                    Potvrdi termin
+                </button>
+
+            </form>
+
+
+            <p id="poruka"></p>
+
+
+            <button
+                id="nazad"
+                class="nazad"
+                type="button"
+            >
+                Nazad
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <footer>
+
+        <p>
+            © 2026 Nova Barber. Sva prava zadržana.
+        </p>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+                      </html>
