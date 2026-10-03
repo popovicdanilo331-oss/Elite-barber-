@@ -7,9 +7,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#forma form");
     const poruka = document.querySelector("#poruka");
 
-
     // Otvori formu
-
     dugme.addEventListener("click", function () {
 
         forma.style.display = "flex";
@@ -23,18 +21,14 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-
     // Slanje rezervacije
-
     form.addEventListener("submit", async function (event) {
 
         event.preventDefault();
 
         poruka.textContent = "Slanje rezervacije...";
 
-
         const formData = new FormData(form);
-
 
         try {
 
@@ -46,9 +40,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             );
 
-
             const data = await response.json();
-
 
             if (data.success) {
 
@@ -64,7 +56,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             }
 
-
         } catch (error) {
 
             poruka.textContent =
@@ -74,8 +65,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
     });
 
-
     // Nazad
-
     nazad.addEventListener("click", function () {
-      
+
+        forma.style.display = "none";
+
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+
+    });
+
+});
