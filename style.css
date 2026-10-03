@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: #111;
+    color: white;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+
+/* NAVIGACIJA */
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 25px;
+    padding: 20px;
+    max-width: 1100px;
+    margin: auto;
+}
+
+nav h2 {
+    margin-right: auto;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+
+/* HERO */
+
+.hero {
+    padding: 100px 20px;
+    background-color: #181818;
+}
+
+.hero h1 {
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 20px;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+
+/* DUGMAD */
+
+button {
+    background-color: white;
+    color: black;
+    border: none;
+    padding: 14px 25px;
+    border-radius: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.85;
+}
+
+
+/* SEKCIJE */
+
+section {
+    padding: 70px 20px;
+}
+
+section h2 {
+    font-size: 32px;
+    margin-bottom: 35px;
+}
+
+
+/* USLUGE */
+
+.usluge {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.usluga {
+    background-color: #1c1c1c;
+    padding: 30px;
+    border-radius: 12px;
+    width: 280px;
+}
+
+.usluga p {
+    color: #bbb;
+    line-height: 1.6;
+}
+
+
+/* CJENOVNIK */
+
+.cjenovnik {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.cijena {
+    background-color: #1c1c1c;
+    padding: 25px;
+    border-radius: 12px;
+    width: 250px;
+}
+
+.cijena strong {
+    font-size: 25px;
+}
+
+
+/* RADNO VRIJEME */
+
+#radno-vrijeme {
+    background-color: #181818;
+}
+
+#radno-vrijeme p {
+    color: #ccc;
+}
+
+
+/* KONTAKT */
+
+#kontakt p {
+    margin: 12px;
+}
+
+
+/* FORMA */
+
+.forma {
+    display: none;
+
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.85);
+
+    justify-content: center;
+    align-items: center;
+
+    padding: 20px;
+}
+
+.forma-sadrzaj {
+    background-color: #1c1c1c;
+
+    width: 100%;
+    max-width: 450px;
+
+    padding: 35px;
+
+    border-radius: 15px;
+}
+
+.forma-sadrzaj input,
+.forma-sadrzaj select {
+    width: 100%;
+
+    padding: 14px;
+
+    margin-bottom: 15px;
+
+    border-radius: 7px;
+
+    border: none;
+}
+
+.forma-sadrzaj button {
+    margin-top: 10px;
+}
+
+#poruka {
+    margin-top: 20px;
+    color: #ddd;
+}
+
+.nazad {
+    background-color: #333;
+    color: white;
+}
+
+
+/* FOOTER */
+
+footer {
+    background-color: #0a0a0a;
+    padding: 25px;
+    color: #888;
+}
+
+
+/* TELEFON */
+
+@media (max-width: 600px) {
+
+    nav {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav h2 {
+        width: 100%;
+        margin: 0 0 10px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    .hero {
+        padding: 80px 20px;
+    }
+
+          }
